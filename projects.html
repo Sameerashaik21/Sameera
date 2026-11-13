@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Projects</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0b1120;
+    color: white;
+}
+
+/* NAVBAR */
+
+header {
+    background: #111827;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: #38bdf8;
+}
+
+/* PROJECT SECTION */
+
+section {
+    min-height: 85vh;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+h1 {
+    color: #38bdf8;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-bottom: 45px;
+}
+
+/* PROJECT CARDS */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    background: #1e293b;
+    width: 320px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+    box-shadow: 0 5px 25px #38bdf855;
+}
+
+.project-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.project-card h2 {
+    color: #38bdf8;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.tech-title {
+    color: #38bdf8;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech {
+    background: #0f172a;
+    color: #38bdf8;
+    padding: 9px 13px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid #38bdf8;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    text-align: center;
+    padding: 22px;
+    color: #94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+
+<header>
+
+<nav>
+
+    <h2 class="logo">MyPortfolio</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+</header>
+
+
+<!-- PROJECTS SECTION -->
+
+<section id="projects">
+
+    <h1>My Projects</h1>
+
+    <p class="subtitle">
+        Here are my projects and technical works.
+    </p>
+
+    <div class="projects-container">
+
+
+        <!-- PROJECT 01 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">🌱</div>
+
+            <h2>01. Crop Hub</h2>
+
+            <p>
+                An agriculture assistance platform designed
+                to help farmers with crop disease identification,
+                fertilizer recommendations, weather updates
+                and market prices.
+            </p>
+
+            <div class="tech-title">
+                Technologies:
+            </div>
+
+            <div class="tech-container">
+
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+                <span class="tech">JavaScript</span>
+                <span class="tech">AI</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 02 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">🤖</div>
+
+            <h2>02. AI-Based Project</h2>
+
+            <p>
+                An intelligent application concept using
+                Artificial Intelligence to provide smart
+                solutions to real-world problems.
+            </p>
+
+            <div class="tech-title">
+                Technologies:
+            </div>
+
+            <div class="tech-container">
+
+                <span class="tech">Python</span>
+                <span class="tech">AI</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 03 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">💻</div>
+
+            <h2>03. Personal Portfolio</h2>
+
+            <p>
+                A responsive personal website to showcase
+                my education, technical skills, projects
+                and achievements.
+            </p>
+
+            <div class="tech-title">
+                Technologies:
+            </div>
+
+            <div class="tech-container">
+
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+                <span class="tech">JavaScript</span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Your Name | All Rights Reserved
+    </p>
+
+</footer>
+
+</body>
+
+</html>
